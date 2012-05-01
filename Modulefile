@@ -8,4 +8,4 @@ description 'PAM Module for Puppet'
 project_page 'https://github.com/Whopper92/puppet-module-pam '
 
 ## Add dependencies, if any:
-dependency 'ripienaar/concat', '>= 20120417'
+dependency 'ripienaar/concat', '>= 0.1.0'
