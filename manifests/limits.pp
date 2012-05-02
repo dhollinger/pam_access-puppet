@@ -14,7 +14,7 @@ define pam::limits (
 
   realize Concat['/etc/security/limits.conf']
 
-  concat::fragment { "${domain}-${type}-${item}-${value}":
+  concat::fragment { "pam::limits ${domain}-${type}-${item}-${value}":
     ensure  => $ensure,
     target  => '/etc/security/limits.conf',
     content => "${domain} ${type} ${item} ${value}\n",
