@@ -1,0 +1,21 @@
+0.0.2 - pdxcat/pam - 2012/05/02
+
+  ******* Update CHANGELOG for 0.0.2 release
+  5c46731 Ensure unique concat::fragment resource names
+  f5120fb Merge remote-tracking branch 'pdxcat/master'
+  327d6f1 Add version number of released concat module
+
+0.0.1 - pdxcat/pam - 2012/04/28
+
+  195de62 Modulefile source and project_page should point at pdxcat
+  2cdec90 Realign code to puppet style guide
+  b916ceb Merge branches 'master' and 'support_limits.conf'
+  82e3380 Update readme
+  0206705 Add pam::limits to manage /etc/security/limits.conf
+  097116e Merge pull request #1 from blkperl/release_to_forge
+  1bce589 Add Modulefile for release to the forge
+  45cc447 Add Apache 2.0 LICENSE file
+  8446f70 Change README to use markdown
+  3da637d Update readme one more time
+  fe9ccac Correct typo in README
+  d1d7ac6 Initial commit. Add manifests and README

@@ -1,5 +1,5 @@
-name 'puppet-module-pam'
-version '0.0.1'
+name 'pdxcat-pam'
+version '0.0.2'
 source 'https://github.com/pdxcat/puppet-module-pam'
 author 'William Hopper'
 license 'Apache License 2.0'
