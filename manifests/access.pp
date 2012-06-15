@@ -7,8 +7,8 @@ define pam::access (
 ) {
   include pam
 
-  if ! ($osfamily in ['Debian']) {
-    fail("pam::access does not support osfamily $osfamily")
+  if ! ($::osfamily in ['Debian']) {
+    fail("pam::access does not support osfamily $::osfamily")
   }
 
   if ! ($permission in ['+', '-']) {
