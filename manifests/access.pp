@@ -7,7 +7,7 @@ define pam::access (
 ) {
   include pam
 
-  if ! ($::osfamily in ['Debian', 'RedHat']) {
+  if ! ($::osfamily in ['Debian', 'RedHat', 'Suse']) {
     fail("pam::access does not support osfamily $::osfamily")
   }
 
