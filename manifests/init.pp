@@ -1,5 +1,4 @@
 class pam {
-  include concat::setup
 
   @concat { '/etc/security/access.conf':
     owner  => 'root',

@@ -8,4 +8,4 @@ description 'PAM Module for Puppet'
 project_page 'https://github.com/pdxcat/puppet-module-pam'
 
 ## Add dependencies, if any:
-dependency 'puppetlabs/concat', '>= 1.0.0'
+dependency 'puppetlabs/concat', '>= 1.1.1'
