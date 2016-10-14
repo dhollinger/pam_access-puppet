@@ -1,27 +1,24 @@
 define pam::access (
   $permission,
-  $entity     = $title,
   $origin,
-  $ensure     = present,
-  $priority   = '10'
+  $entity   = $title,
+  $ensure   = present,
+  $priority = '10'
 ) {
   include pam
 
-  if ! ($::osfamily in ['Debian', 'RedHat', 'Suse']) {
-    fail("pam::access does not support osfamily $::osfamily")
+  if ! ($osfamily in ['Debian', 'RedHat', 'Suse']) {
+    fail("pam::access does not support osfamily ${osfamily}")
   }
 
   if ! ($permission in ['+', '-']) {
-    fail("Permission must be + or - ; recieved $permission")
+    fail("Permiision must be + or - ; recieved ${permission}")
   }
 
-  realize Concat['/etc/security/access.conf']
-
-  concat::fragment { "pam::access $permission$entity$origin":
+  concat::fragment { "pam::access ${permission}${entity}${origin}":
     ensure  => $ensure,
     target  => '/etc/security/access.conf',
     content => "${permission}:${entity}:${origin}\n",
-    order   => $priority,
+    order   => $priority
   }
-
 }

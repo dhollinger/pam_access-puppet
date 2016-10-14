@@ -12,8 +12,6 @@ define pam::limits (
     fail("pam::limits does not support osfamily $osfamily")
   }
 
-  realize Concat['/etc/security/limits.conf']
-
   concat::fragment { "pam::limits ${domain}-${type}-${item}-${value}":
     ensure  => $ensure,
     target  => '/etc/security/limits.conf',
