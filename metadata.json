@@ -1,5 +1,5 @@
 {
-  "name": "dhollinger-pam",
+  "name": "dhollinger-pam_access",
   "version": "0.0.4",
   "author": "David Hollinger III",
   "summary": "Module for managing access.conf and limits.conf",
